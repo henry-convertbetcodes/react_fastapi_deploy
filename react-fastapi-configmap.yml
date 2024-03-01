@@ -1,0 +1,29 @@
+apiVersion: v1
+
+kind: ConfigMap
+
+metadata:
+
+  name: fastapi-config
+
+data:
+  HNG_API_HOST: 16.16.195.12
+
+  HNG_API_ORIGINS: http://16.16.195.12:30000
+
+  
+---
+
+apiVersion: v1
+
+kind: ConfigMap
+
+metadata:
+
+  name: react-config
+
+data:
+  REACT_APP_API_URL: http://16.16.195.12:31000
+
+  REACT_APP_LESSON_DAY: day1
+
